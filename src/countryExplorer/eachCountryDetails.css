@@ -1,0 +1,107 @@
+.eachcountry {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("/public/world.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; /* for a subtle parallax effect */
+}
+
+.country-card {
+  background: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  padding: 30px;
+  width: 80%;
+  max-width: 700px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.country-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+.country-card h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffeaa7; /* soft yellow */
+  text-shadow: 1px 2px rgba(0, 0, 0, 0.4);
+  transition: color 0.3s ease;
+}
+
+.country-card h1:hover {
+  color: #fdcb6e; /* vibrant yellow on hover */
+}
+
+.country-card img.flag {
+  display: block;
+  width: 12vw;
+  height: 13vh;
+  margin: 0 auto 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.country-card img.flag:hover {
+  transform: scale(1.1);
+}
+
+.country-card .detail {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 12px 0;
+  color: #dfe6e9; /* softer white */
+}
+
+.country-card .detail-label {
+  font-weight: bold;
+  color: #81ecec; /* light blue for labels */
+}
+
+.coat-of-arms {
+  display: block;
+  margin: 20px auto;
+  width: 80px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.coat-of-arms:hover {
+  transform: rotate(15deg) scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .country-card {
+    padding: 20px;
+  }
+
+  .country-card h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .country-card .detail {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .country-card img.flag {
+    width: 18vw;
+    height: 15vh;
+  }
+
+  .coat-of-arms {
+    width: 60px;
+  }
+}
