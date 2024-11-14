@@ -174,7 +174,7 @@
 }
 
 .heading_text {
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: bold;
   background: linear-gradient(45deg, #FF6F91, #FFC107, #00B0FF, #7E57C2);
   background-size: 400% 400%;
@@ -195,21 +195,21 @@
 }
 
 
-/* Mobile responsive adjustments */
+
 @media (max-width: 1024px) {
   .main {
-    grid-template-columns: repeat(3, 1fr); /* 3 cards per row on medium screens */
+    grid-template-columns: repeat(3, 1fr); 
   }
 }
 
 @media (max-width: 768px) {
   .main {
-    grid-template-columns: repeat(2, 1fr); /* 2 cards per row on small screens */
+    grid-template-columns: repeat(2, 1fr); 
   }
 }
 
 @media (max-width: 480px) {
   .main {
-    grid-template-columns: 1fr; /* 1 card per row on extra small screens */
+    grid-template-columns: 1fr; 
   }
 }

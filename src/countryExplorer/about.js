@@ -3,11 +3,14 @@ import './About.css';
 import CountriesNavBar from './navbarCountries';
 
 const About = () => {
-
     return (
         <div>
-            <CountriesNavBar/>
-            <div className='main2'>
+            <div className='about_container'>
+            <img className='imageset' src="/rb_2147914972.png"></img>
+            <CountriesNavBar />
+            </div>
+         
+            <div className="main2">
                 <div className="about-container">
                     <h1 className="about-title">Explore the Countries Search App</h1>
                     <p className="about-description">
